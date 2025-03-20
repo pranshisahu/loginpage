@@ -78,7 +78,7 @@ const SignUp = () => {
   return (
     <div className={styles.container}>
       <form className={styles.formLogin} onSubmit={submitHandler} autoComplete="off">
-        <h2>Sign Up</h2>
+        <h2>Sign Up for user</h2>
         <div>
           <div className={errors.name && touched.name ? styles.unCompleted : !errors.name && touched.name ? styles.completed : undefined}>
             <input type="text" name="name" value={data.name} placeholder="Name" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
